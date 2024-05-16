@@ -1,0 +1,26 @@
+{
+  "name": "caartable_standalone",
+  "version": "1.0.0",
+  "description": "Application mobile de CAA",
+  "main": "main.js",
+  "scripts": {
+    "start":"electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franssouah/pictos.git"
+  },
+  "keywords": [
+    "CAA"
+  ],
+  "author": "FD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franssouah/pictos/issues"
+  },
+  "homepage": "https://github.com/franssouah/pictos#readme",
+  "devDependencies": {
+    "electron": "^30.0.5"
+  }
+}
