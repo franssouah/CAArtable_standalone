@@ -14,7 +14,7 @@ module.exports = {
         // An URL to an ICO file to use as the application icon (displayed in Control Panel > Programs and Features).
         //iconUrl: '/caartable_icon/icon.ico',
         // The ICO file to use as the icon for the generated Setup.exe
-        setupIcon: 'icon.png'
+        setupIcon: 'icon.ico'
         //icon: '/caartable_icon/icon.ico'
       },
     },
