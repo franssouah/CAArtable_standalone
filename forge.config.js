@@ -4,13 +4,17 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: '/caartable_icon/icon' // no file extension required
+    icon: './caartable_icon/icon' // no file extension required
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
       config: {
+        certificateFile: './certificat/cert.pfx',
+        certificatePassword: process.env.CERTIFICATE_PASSWORD,
+        //authors: 'FD - équipe ressource ASH 87',
+        //description: 'Version portable de CAArtable',
         // An URL to an ICO file to use as the application icon (displayed in Control Panel > Programs and Features).
         //iconUrl: '/caartable_icon/icon.ico',
         // The ICO file to use as the icon for the generated Setup.exe
@@ -18,7 +22,7 @@ module.exports = {
         //icon: '/caartable_icon/icon.ico'
       },
     },
-    {
+    /*{
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
     },
@@ -37,7 +41,7 @@ module.exports = {
           icon: '/caartable_icon/icon.png'
         }
       },
-    },
+    },*/
   ],
   plugins: [
     {
