@@ -21,12 +21,12 @@ module.exports = {
         //setupIcon: 'icon.ico'
         //icon: '/caartable_icon/icon.ico'
       },
-    },*/
+    },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin', 'linux'],
-    },
-    /*{
+      platforms: ['linux'],
+    },*/
+    {
       name: '@electron-forge/maker-deb',
       config: {
         options: {
@@ -34,7 +34,7 @@ module.exports = {
         }
       },
     },
-    {
+    /*{
       name: '@electron-forge/maker-rpm',
       config: {
         options: {
