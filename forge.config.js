@@ -8,7 +8,7 @@ module.exports = {
   },
   rebuildConfig: {},
   makers: [
-    {
+    /*{
       name: '@electron-forge/maker-squirrel',
       config: {
         certificateFile: './certificat/cert.pfx',
@@ -21,12 +21,12 @@ module.exports = {
         //setupIcon: 'icon.ico'
         //icon: '/caartable_icon/icon.ico'
       },
+    },*/
+    {
+      name: '@electron-forge/maker-zip',
+      platforms: ['darwin', 'linux'],
     },
     /*{
-      name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
-    },
-    {
       name: '@electron-forge/maker-deb',
       config: {
         options: {
